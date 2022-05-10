@@ -9,20 +9,20 @@ import NotFound from './NotFound';
 function App() {
   return (
     <Router>
-      <div className='App'>
+      <div className="App">
         <NavBar />
-        <div className='content'>
+        <div className="content">
           <Routes>
-            <Route exact path='/' element={<Home />}></Route>
+            <Route exact path="/" element={<Home />}></Route>
           </Routes>
           <Routes>
-            <Route path='/create' element={<Create />}></Route>
+            <Route path="/create" element={<Create />}></Route>
           </Routes>
           <Routes>
-            <Route path='/blogs/:id' element={<BlogDetails />}></Route>
+            <Route path="/blogs/:id" element={<BlogDetails />}></Route>
           </Routes>
           <Routes>
-            <Route path='*' element={<NotFound />}></Route>
+            <Route path="*" element={<NotFound />}></Route>
           </Routes>
         </div>
       </div>
